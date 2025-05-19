@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCD16F612DD3F54F0044A622 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD16F422DD3F47B0044A622 /* WidgetKit.framework */; };
+		DCD16F622DD3F54F0044A622 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD16F442DD3F47B0044A622 /* SwiftUI.framework */; };
+		DCD16F6F2DD3F5500044A622 /* MatchExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DCD16F602DD3F54F0044A622 /* MatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCEC053F2DDA655800BC885C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCEC053E2DDA655800BC885C /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD16F6D2DD3F5500044A622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE3F62C2DCFFD37001EAFA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD16F5F2DD3F54F0044A622;
+			remoteInfo = MatchExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCD16F5B2DD3F47C0044A622 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				DCD16F6F2DD3F5500044A622 /* MatchExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCD16F422DD3F47B0044A622 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DCD16F442DD3F47B0044A622 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DCD16F602DD3F54F0044A622 /* MatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE3F6342DCFFD37001EAFA6 /* Counter-Strike Live Activity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Counter-Strike Live Activity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCEC053E2DDA655800BC885C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DCD16F702DD3F5500044A622 /* Exceptions for "Match" folder in "MatchExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DCD16F5F2DD3F54F0044A622 /* MatchExtension */;
+		};
+		DCD16F792DD3FFA20044A622 /* Exceptions for "Match" folder in "Counter-Strike Live Activity" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MatchAttributes.swift,
+			);
+			target = DCE3F6332DCFFD37001EAFA6 /* Counter-Strike Live Activity */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DCD16F632DD3F54F0044A622 /* Match */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DCD16F792DD3FFA20044A622 /* Exceptions for "Match" folder in "Counter-Strike Live Activity" target */,
+				DCD16F702DD3F5500044A622 /* Exceptions for "Match" folder in "MatchExtension" target */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		DCE3F6362DCFFD37001EAFA6 /* Counter-Strike Live Activity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Counter-Strike Live Activity";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD16F5D2DD3F54F0044A622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				DCD16F622DD3F54F0044A622 /* SwiftUI.framework in Frameworks */,
+				DCD16F612DD3F54F0044A622 /* WidgetKit.framework in Frameworks */,
+			);
+		};
+		DCE3F6312DCFFD37001EAFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCD16F412DD3F47B0044A622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD16F422DD3F47B0044A622 /* WidgetKit.framework */,
+				DCD16F442DD3F47B0044A622 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE3F62B2DCFFD37001EAFA6 = {
+			isa = PBXGroup;
+			children = (
+				DCE3F6362DCFFD37001EAFA6 /* Counter-Strike Live Activity */,
+				DCD16F632DD3F54F0044A622 /* Match */,
+				DCD16F412DD3F47B0044A622 /* Frameworks */,
+				DCE3F6352DCFFD37001EAFA6 /* Products */,
+				DCEC053E2DDA655800BC885C /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		DCE3F6352DCFFD37001EAFA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE3F6342DCFFD37001EAFA6 /* Counter-Strike Live Activity.app */,
+				DCD16F602DD3F54F0044A622 /* MatchExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD16F5F2DD3F54F0044A622 /* MatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD16F712DD3F5500044A622 /* Build configuration list for PBXNativeTarget "MatchExtension" */;
+			buildPhases = (
+				DCD16F5C2DD3F54F0044A622 /* Sources */,
+				DCD16F5D2DD3F54F0044A622 /* Frameworks */,
+				DCD16F5E2DD3F54F0044A622 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				DCD16F632DD3F54F0044A622 /* Match */,
+			);
+			name = MatchExtension;
+			productName = MatchExtension;
+			productReference = DCD16F602DD3F54F0044A622 /* MatchExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DCE3F6332DCFFD37001EAFA6 /* Counter-Strike Live Activity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE3F6552DCFFD38001EAFA6 /* Build configuration list for PBXNativeTarget "Counter-Strike Live Activity" */;
+			buildPhases = (
+				DCE3F6302DCFFD37001EAFA6 /* Sources */,
+				DCE3F6312DCFFD37001EAFA6 /* Frameworks */,
+				DCE3F6322DCFFD37001EAFA6 /* Resources */,
+				DCD16F5B2DD3F47C0044A622 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD16F6E2DD3F5500044A622 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DCE3F6362DCFFD37001EAFA6 /* Counter-Strike Live Activity */,
+			);
+			name = "Counter-Strike Live Activity";
+			productName = "Counter-Strike Live Activity";
+			productReference = DCE3F6342DCFFD37001EAFA6 /* Counter-Strike Live Activity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCE3F62C2DCFFD37001EAFA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					DCD16F5F2DD3F54F0044A622 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					DCE3F6332DCFFD37001EAFA6 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = DCE3F62F2DCFFD37001EAFA6 /* Build configuration list for PBXProject "Counter-Strike Live Activity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCE3F62B2DCFFD37001EAFA6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = DCE3F6352DCFFD37001EAFA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE3F6332DCFFD37001EAFA6 /* Counter-Strike Live Activity */,
+				DCD16F5F2DD3F54F0044A622 /* MatchExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD16F5E2DD3F54F0044A622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		DCE3F6322DCFFD37001EAFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				DCEC053F2DDA655800BC885C /* README.md in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD16F5C2DD3F54F0044A622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		DCE3F6302DCFFD37001EAFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD16F6E2DD3F5500044A622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD16F5F2DD3F54F0044A622 /* MatchExtension */;
+			targetProxy = DCD16F6D2DD3F5500044A622 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCD16F722DD3F5500044A622 /* Debug configuration for PBXNativeTarget "MatchExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7D9Z88NBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Match/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Match;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "codes.caden.Counter-Strike-Live-Activity.Match";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DCD16F732DD3F5500044A622 /* Release configuration for PBXNativeTarget "MatchExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7D9Z88NBS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Match/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Match;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "codes.caden.Counter-Strike-Live-Activity.Match";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DCE3F6532DCFFD38001EAFA6 /* Debug configuration for PBXProject "Counter-Strike Live Activity" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCE3F6542DCFFD38001EAFA6 /* Release configuration for PBXProject "Counter-Strike Live Activity" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCE3F6562DCFFD38001EAFA6 /* Debug configuration for PBXNativeTarget "Counter-Strike Live Activity" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7D9Z88NBS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counter-Strike-Live-Activity-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "codes.caden.Counter-Strike-Live-Activity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DCE3F6572DCFFD38001EAFA6 /* Release configuration for PBXNativeTarget "Counter-Strike Live Activity" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q7D9Z88NBS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counter-Strike-Live-Activity-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "codes.caden.Counter-Strike-Live-Activity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD16F712DD3F5500044A622 /* Build configuration list for PBXNativeTarget "MatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD16F722DD3F5500044A622 /* Debug configuration for PBXNativeTarget "MatchExtension" */,
+				DCD16F732DD3F5500044A622 /* Release configuration for PBXNativeTarget "MatchExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DCE3F62F2DCFFD37001EAFA6 /* Build configuration list for PBXProject "Counter-Strike Live Activity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE3F6532DCFFD38001EAFA6 /* Debug configuration for PBXProject "Counter-Strike Live Activity" */,
+				DCE3F6542DCFFD38001EAFA6 /* Release configuration for PBXProject "Counter-Strike Live Activity" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		DCE3F6552DCFFD38001EAFA6 /* Build configuration list for PBXNativeTarget "Counter-Strike Live Activity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE3F6562DCFFD38001EAFA6 /* Debug configuration for PBXNativeTarget "Counter-Strike Live Activity" */,
+				DCE3F6572DCFFD38001EAFA6 /* Release configuration for PBXNativeTarget "Counter-Strike Live Activity" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCE3F62C2DCFFD37001EAFA6 /* Project object */;
+}

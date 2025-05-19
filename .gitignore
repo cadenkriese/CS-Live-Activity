@@ -1,0 +1,39 @@
+# Xcode
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## GCC patch
+/*.gcno
+
+## Objective-C/Swift
+*.hmap
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+.build/
+
+## Swift Package Manager
+Packages
+
+## User settings
+xcuserdata/
+
+## Xcode project
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# macOS
+.DS_Store
+
+# Copyright sample assets for development purposes
+*FLC*
+*SPI*
+*HLTV*
