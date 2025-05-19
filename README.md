@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://github.com/cadenkriese/CS-Live-Activity/blob/main/Assets/Mockup%20Display.jpg?raw=true" height="600">
   <h1 align="center">Counter-Strike Live Activity</h1>
 </p>
 
